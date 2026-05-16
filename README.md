@@ -1,6 +1,27 @@
 # FASE_5_FREDDYRIVERA_PYTHON
 Código para dar solución al problema 3 de la fase 5 del programa FUNDAMENTOS DE LA PROGRAMACION.
 
+Problema 3: 
+
+Se requiere una herramienta para auditar el inventario y
+decidir qué artículos necesitan ser reabastecidos. 
+
+La información se encuentra en una matriz: [Código artículo, nombre, stock actual, stock mínimo requerido].
+
+Requisitos de Desarrollo
+
+-	 Matriz: Crear una matriz con al menos 5 artículos.
+
+-	Módulos: Se requiere un módulo (función) para determinar la cantidad exacta por pedir para un artículo.
+
+-	Lógica de Negocio:
+
+✓ Si el Stock Actual es menor al Stock Mínimo, la cantidad a pedir es la diferencia (Mínimo Requerido - Stock Actual).
+
+✓ Si el Stock Actual es suficiente (mayor o igual al Mínimo), la cantidad a pedir es cero.
+
+-	 Salida: Imprimir una lista de pedidos que muestre el nombre del artículo y la cantidad exacta que debe ser solicitada.
+
 
     INVENTARIO = [
         ["A101", "Teclado", 8, 10],
@@ -121,6 +142,5 @@ Código para dar solución al problema 3 de la fase 5 del programa FUNDAMENTOS D
             print("Opción no válida. Por favor, seleccione una opción del menú.\n")
 
 
-if __name__ == "__main__":
-    INICIO()
-
+    if __name__ == "__main__":
+        INICIO()
