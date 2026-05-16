@@ -2,6 +2,8 @@
 Código para dar solución al problema 3 de la fase 5 del programa FUNDAMENTOS DE LA PROGRAMACION.
 
 
+
+
 INVENTARIO = [
     ["A101", "Teclado", 8, 10],
     ["A102", "Mouse", 25, 15],
@@ -9,7 +11,6 @@ INVENTARIO = [
     ["A104", "Silla", 0, 4],
     ["A105", "Audifonos", 12, 10]
 ]
-
 def mostrar_inventario():
     print("\n" + "="*60)
     print(f"{'ID':<5} {'Producto':<20} {'Stock Actual':<15} {'Stock Mínimo':<10}")
@@ -17,11 +18,9 @@ def mostrar_inventario():
     for producto in INVENTARIO:
         print(f"{producto[0]:<5} {producto[1]:<20} {producto[2]:<15} {producto[3]:<10}")
     print("="*60 + "\n")
-
 def agregar_producto(codigo, nombre, stock_actual, stock_minimo):
     INVENTARIO.append([codigo, nombre, stock_actual, stock_minimo])
     print(f"✓ Producto '{nombre}' agregado correctamente\n")
-
 def editar_producto(codigo, nombre=None, stock_actual=None, stock_minimo=None):
     for producto in INVENTARIO:
         if str(producto[0]).upper() == str(codigo).upper():
@@ -43,7 +42,6 @@ def editar_producto(codigo, nombre=None, stock_actual=None, stock_minimo=None):
             return
     print(f"✗ Producto con ID {codigo} no encontrado\n")
     print(f"  Códigos disponibles: {[p[0] for p in INVENTARIO]}\n")
-
 def eliminar_producto(codigo):
     for i, producto in enumerate(INVENTARIO):
         if producto[0] == codigo:
@@ -51,13 +49,11 @@ def eliminar_producto(codigo):
             print(f"✓ Producto eliminado correctamente\n")
             return
     print(f"✗ Producto con ID {codigo} no encontrado\n")
-
 def calcular_pedido(stock_actual, stock_minimo):
     if stock_actual < stock_minimo:
         return stock_minimo - stock_actual
     else:
         return 0
-
 def INICIO():
     while True:
         print("\n==============================")
@@ -75,7 +71,6 @@ def INICIO():
             continue
         if opcion == 1:
             mostrar_inventario()
-        
         elif opcion == 2:
             try:
                 codigo = input("Ingrese el código del producto: ")
