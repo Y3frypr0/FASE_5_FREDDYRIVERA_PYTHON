@@ -1,6 +1,7 @@
 # FASE_5_FREDDYRIVERA_PYTHON
 Código para dar solución al problema 3 de la fase 5 del programa FUNDAMENTOS DE LA PROGRAMACION.
 
+
 Problema 3: 
 
 Se requiere una herramienta para auditar el inventario y
@@ -21,6 +22,11 @@ Requisitos de Desarrollo
 ✓ Si el Stock Actual es suficiente (mayor o igual al Mínimo), la cantidad a pedir es cero.
 
 -	 Salida: Imprimir una lista de pedidos que muestre el nombre del artículo y la cantidad exacta que debe ser solicitada.
+
+
+En el código utilizo diferentes elementos de programación para construir un sistema básico de gestión de inventario. Primero, se emplea una matriz o lista bidimensional llamada INVENTARIO, donde se almacenan los datos de cada producto como código, nombre, stock actual y stock mínimo. También se utilizan funciones o módulos como mostrar_inventario(), agregar_producto(), editar_producto() y eliminar_producto(), las cuales permiten organizar el programa y reutilizar procesos específicos.
+
+Además, el programa hace uso de estructuras condicionales (if, elif, else) para tomar decisiones según la opción seleccionada por el usuario o para verificar si un producto necesita ser reabastecido. Las estructuras repetitivas (for y while) permiten recorrer los productos del inventario y mantener el menú activo hasta que el usuario decida salir. Finalmente, se emplean variables, entradas de datos con input(), manejo de errores con try-except y una función llamada calcular_pedido() que aplica la lógica de negocio para determinar cuántas unidades deben solicitarse cuando el stock es menor al mínimo requerido.
 
 
     INVENTARIO = [
